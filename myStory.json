@@ -178,6 +178,7 @@
         },
         "Petting Dolphin": {
             "Body": "The dolphin is trying to lead me to the Research Facilities next door...",
+            "Body2":"The dolphin is trying to lead me to the Astronomy Section for some reason",
             "Choices":[
                 {
                     "Text": "Back",

@@ -26,11 +26,11 @@ class Engine {
     gotoScene(sceneClass, data) {
         this.scene = new sceneClass(this);
         this.scene.create(data);
-        //console.log(data)
+        console.log(data)
         //data is current Location
         if(data == "Petting Dolphin"){
             //console.log(sceneClass)
-            this.scene.petDolphin();
+            this.scene.petDolphin(data);
         }
     }
 
