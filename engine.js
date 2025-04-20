@@ -1,5 +1,4 @@
 class Engine {
-
     static load(...args) {
         window.onload = () => new Engine(...args);
     }
@@ -8,6 +7,7 @@ class Engine {
 
         this.firstSceneClass = firstSceneClass;
         this.storyDataUrl = storyDataUrl;
+        this.boneKey = false;
 
         this.header = document.body.appendChild(document.createElement("h1"));
         this.output = document.body.appendChild(document.createElement("div"));
@@ -26,8 +26,15 @@ class Engine {
     gotoScene(sceneClass, data) {
         this.scene = new sceneClass(this);
         this.scene.create(data);
+        //console.log(data)
+        //data is current Location
+        if(data == "Petting Dolphin"){
+            //console.log(sceneClass)
+            this.scene.petDolphin();
+        }
     }
 
+    //data = choices
     addChoice(action, data) {
         let button = this.actionsContainer.appendChild(document.createElement("button"));
         button.innerText = action;
@@ -37,6 +44,9 @@ class Engine {
             }
             this.scene.handleChoice(data);
         }
+        //console.log(action);
+        //console.log(this.dolphinFood);
+
     }
 
     setTitle(title) {
@@ -49,13 +59,13 @@ class Engine {
         div.innerHTML = msg;
         this.output.appendChild(div);
     }
+
 }
 
 class Scene {
     constructor(engine) {
         this.engine = engine;
     }
-
     create() { }
 
     update() { }

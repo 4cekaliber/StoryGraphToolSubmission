@@ -1,58 +1,218 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Scientific Escapade",
+    "Credits": "Created by Elijah Martiniano",
+    "InitialLocation": "waitingRoom",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "waitingRoom": {
+            "Body": "You just woke up from a long nap in the waiting room of a museum/research facility and are unsure what time it is. You realize that it is actually after hours and you must figure out a way to exit the facility.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Enter Dinosaur Exhibit",
+                    "Target": "Dinosaur Exhibit"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
-                }
-            ]
-        },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Enter Aquarium",
+                    "Target": "Aquarium"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Try Front Exit",
+                    "Target": "Front Exit"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Dinosaur Exhibit": {
+            "Body": "Woah these dinosaurs in this exhibit are enormous!!! Although one of the dinosaurs is missing a small bone at the end of their tail, I wonder where it went...",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Back",
+                    "Target": "waitingRoom"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Enter Earthquake Section",
+                    "Target": "Earthquake Section"
+                },
+                {
+                    "Text": "Enter Rainforest Terrarium",
+                    "Target": "Rainforest Terrarium"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Front Exit": {
+            "Body": "This is the front exit but its chained shut.",
+            "Choices": [
+                {
+                    "Text": "Enter Dinosaur Exhibit",
+                    "Target": "Dinosaur Exhibit"
+                },
+                {
+                    "Text": "Enter Aquarium",
+                    "Target": "Aquarium"
+                }
+            ]
+        },
+        "Aquarium": {
+            "Body": "I always loved the aquarium as a child, there are so many different types of fish and algae in this aquarium!",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "waitingRoom"
+                },
+                {
+                    "Text": "Enter Geology Center",
+                    "Target": "Geology Center"
+                },
+                {
+                    "Text": "Enter Crocodile Exhibit",
+                    "Target": "Crocodile Exhibit"
+                }
+            ]
+        },
+        "Earthquake Section": {
+            "Body": "I always thought that this Earthquake simulation was fascinating during my childhood!",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Dinosaur Exhibit"
+                },
+                {
+                    "Text": "Enter Research Facilities",
+                    "Target": "Research Facilities"
+                },
+                {
+                    "Text": "Enter Dolphin Pools",
+                    "Target": "Dolphin Pool"
+                }
+            ]
+        },
+        "Rainforest Terrarium": {
+            "Body": "Its really humid here in this terrarium! But there's nothing that can help me here.",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Dinosaur Exhibit"
+                }
+            ]
+        },
+        "Geology Center": {
+            "Body": "I had no idea this many types of rocks even existed! But nothing seems of use here.",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Aquarium"
+                }
+            ]
+        },
+        "Astronomy Section": {
+            "Body": "I always loved stargazing, the astronomy section is astonoshing!",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Aquarium"
+                },
+                {
+                    "Text": "Peer Into Telescope",
+                    "Target": "Telescope"
+                }
+            ]
+        },
+        "Telescope": {
+            "Body": "Someone put the missing dinosaur bone inside the telescope!",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Aquarium"
+                },
+                {
+                    "Text": "Grab Bone",
+                    "Target":"Found Key"
+                }
+            ]
+        },
+        "Found Key": {
+            "Body": "Cool, maybe this can be handy later!",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Astronomy Section"
+                }
+            ]
+        },
+        "Crocodile Exhibit": {
+            "Body": "These crocodiles look vicious, thankfully they're trapped in that pit!",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Aquarium"
+                },
+                {
+                    "Text": "Enter Astronomy Section",
+                    "Target":"Astronomy Section"
+                }
+            ]
+        },
+        "Dolphin Pool": {
+            "Body": "This is amazing, all the dolphins just speedily swimming around and playing with each other! One dolphin is approaching me and making squeaking sounds I wonder what that means?",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Earthquake Section"
+                },
+                {
+                    "Text": "Pet Dolphin",
+                    "Target":"Petting Dolphin"
+                }
+            ]
+        },
+        "Research Facilities": {
+            "Body": "So this is what scientific research labs look like! This is exactly how I imagined it!",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Earthquake Section"
+                },
+                {
+                    "Text": "Try Emergency Exit",
+                    "Target": "Emergency Exit"
+                }
+            ]
+        },
+        "Petting Dolphin": {
+            "Body": "The dolphin is trying to lead me to the Research Facilities next door...",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Dolphin Pool"
+                }
+            ]
+        },
+        "Emergency Exit": {
+            "Body": "I found an escape hatch, this could be my opportunity to escape!",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Research Facilities"
+                },
+                {
+                    "Text": "Open Emergency Hatch",
+                    "Target":"hatch1",
+                    "Target2":"hatch2"
+                }
+            ]
+        },
+        "hatch1": {
+            "Body": "Some of sort of key is required...",
+            "Choices":[
+                {
+                    "Text": "Back",
+                    "Target":"Emergency Exit"
+                }
+            ]
+        },
+        "hatch2": {
+            "Body": "We ESCAPED!!!",
+            "Choices":[
+                
+            ]
         }
     }
 }
